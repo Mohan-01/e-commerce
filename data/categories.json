@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Electronics",
+    "description": "Products related to electronic devices and gadgets"
+  },
+  {
+    "name": "Clothing",
+    "description": "Apparel and clothing items for men, women, and children"
+  },
+  {
+    "name": "Home & Kitchen",
+    "description": "Household appliances, kitchenware, and home decor items"
+  },
+  {
+    "name": "Books",
+    "description": "Books on various topics including fiction, non-fiction, and educational materials"
+  },
+  {
+    "name": "Beauty & Personal Care",
+    "description": "Cosmetics, skincare, and personal care products"
+  },
+  {
+    "name": "Sports & Outdoors",
+    "description": "Sports equipment, outdoor gear, and fitness accessories"
+  },
+  {
+    "name": "Toys & Games",
+    "description": "Children's toys, games, and educational playthings"
+  },
+  {
+    "name": "Health & Wellness",
+    "description": "Vitamins, supplements, and health-related products"
+  },
+  {
+    "name": "Furniture",
+    "description": "Furnishings for the home, including sofas, tables, and chairs"
+  },
+  {
+    "name": "Jewelry & Watches",
+    "description": "Fine jewelry, watches, and accessories for both men and women"
+  }
+]

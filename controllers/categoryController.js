@@ -68,7 +68,6 @@ const deleteCategory = async (req, res) => {
     }
     res.json({ message: 'Category deleted successfully' });
   } catch (error) {
-    // console.log(error.message);
     res.status(500).json({ error: error.message });
   }
 };

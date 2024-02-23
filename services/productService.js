@@ -1,7 +1,6 @@
 import Product from '../models/Product.js';
-import pool from '../config/db.js';
 
-const createProductService = async (
+const createProduct = async (
   category_id,
   title,
   price,
@@ -10,83 +9,68 @@ const createProductService = async (
   image
 ) => {
   try {
-    const newProduct = await Product.createProduct(
+    const newProduct = await Product.create({
       category_id,
       title,
       price,
       description,
       availability,
       image
-    );
+    });
     return newProduct;
   } catch (error) {
-    console.log(error.message);
     throw new Error('Unable to create product');
   }
 };
 
-const getProductByIdService = async productId => {
+const getProductById = async productId => {
   try {
-    const product = await Product.getProductById(productId);
+    const product = await Product.findByPk(productId);
     return product;
   } catch (error) {
     throw new Error('Unable to fetch product');
   }
 };
 
-const getAllProductsService = async () => {
+const getAllProducts = async () => {
   try {
-    const products = await Product.getAllProducts();
+    const products = await Product.findAll();
     return products;
   } catch (error) {
     throw new Error('Unable to fetch products');
   }
 };
 
-const updateProductService = async (productId, updatedFields) => {
+const updateProduct = async (productId, updatedFields) => {
   try {
-    const values = [];
-    let setClause = '';
-    let placeHolderIndex = 1;
-    Object.entries(updatedFields).forEach(([key, value], index) => {
-      if (value) {
-        setClause += `${key} = $${placeHolderIndex}, `;
-        values.push(value);
-        placeHolderIndex++;
-      }
-    });
-
-    // Remove the trailing comma and space
-    setClause = setClause.slice(0, -2);
-
-    // Construct the SQL query
-    const query = {
-      text: `UPDATE products SET ${setClause} WHERE id = $${placeHolderIndex} RETURNING *`,
-      values: [...values, productId]
-    };
-
-    // Execute the query
-    const updatedProduct = await pool.query(query);
-    return updatedProduct.rows[0];
+    const product = await Product.findByPk(productId);
+    if (!product) {
+      throw new Error('Product not found');
+    }
+    await product.update(updatedFields);
+    return product;
   } catch (error) {
-    console.log(error.message);
     throw new Error('Unable to update product');
   }
 };
 
-const deleteProductService = async productId => {
+const deleteProduct = async productId => {
   try {
-    await Product.deleteProduct(productId);
-    return true;
+    const deletedCount = await Product.destroy({
+      where: {
+        id: productId
+      }
+    });
+    return deletedCount > 0;
   } catch (error) {
     throw new Error('Unable to delete product');
   }
 };
 
 export default {
-  createProductService,
-  getProductByIdService,
-  getAllProductsService,
-  updateProductService,
-  deleteProductService
+  createProduct,
+  getProductById,
+  getAllProducts,
+  updateProduct,
+  deleteProduct
 };

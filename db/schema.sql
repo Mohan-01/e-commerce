@@ -18,12 +18,15 @@ CREATE TABLE IF NOT EXISTS products (
     FOREIGN KEY (category_id) REFERENCES categories(id)
 );
 
+CREATE TYPE user_role AS ENUM ('admin', 'merchant', 'customer');
+
 -- Users table
 CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
     username VARCHAR(255) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL
+    email VARCHAR(255) UNIQUE NOT NULL,
+    role user_role DEFAULT 'customer'
 );
 
 -- Carts table

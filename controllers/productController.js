@@ -1,10 +1,10 @@
 import productService from '../services/productService.js';
 
-const createProductController = async (req, res) => {
+const createProduct = async (req, res) => {
   try {
     const { category_id, title, price, description, availability, image } =
       req.body;
-    const newProduct = await productService.createProductService(
+    const newProduct = await productService.createProduct(
       category_id,
       title,
       price,
@@ -14,15 +14,14 @@ const createProductController = async (req, res) => {
     );
     res.status(201).json(newProduct);
   } catch (error) {
-    console.log(error.message);
     res.status(500).json({ error: 'Unable to create product' });
   }
 };
 
-const getProductByIdController = async (req, res) => {
+const getProductById = async (req, res) => {
   try {
     const productId = req.params.id;
-    const product = await productService.getProductByIdService(productId);
+    const product = await productService.getProductById(productId);
     if (product) {
       res.status(200).json(product);
     } else {
@@ -33,35 +32,35 @@ const getProductByIdController = async (req, res) => {
   }
 };
 
-const getAllProductsController = async (req, res) => {
+const getAllProducts = async (req, res) => {
   try {
-    const products = await productService.getAllProductsService();
-    res.status(200).json(products);
+    const products = await productService.getAllProducts();
+    res.status(200).json({
+      items: products.length,
+      products
+    });
   } catch (error) {
     res.status(500).json({ error: 'Unable to fetch products' });
   }
 };
 
-const updateProductController = async (req, res) => {
+const updateProduct = async (req, res) => {
   try {
     const productId = req.params.id;
-    const { category_id, title, price, description, availability, image } =
-      req.body;
-    const updatedProduct = await productService.updateProductService(
+    const updatedProduct = await productService.updateProduct(
       productId,
-      { category_id, title, price, description, availability, image }
+      req.body
     );
     res.status(200).json(updatedProduct);
   } catch (error) {
-    console.log(error.message);
     res.status(500).json({ error: 'Unable to update product' });
   }
 };
 
-const deleteProductController = async (req, res) => {
+const deleteProduct = async (req, res) => {
   try {
     const productId = req.params.id;
-    const deleted = await productService.deleteProductService(productId);
+    const deleted = await productService.deleteProduct(productId);
     if (deleted) {
       res.status(200).json({ message: 'Product deleted successfully' });
     } else {
@@ -73,9 +72,9 @@ const deleteProductController = async (req, res) => {
 };
 
 export default {
-  createProductController,
-  getProductByIdController,
-  getAllProductsController,
-  updateProductController,
-  deleteProductController
+  createProduct,
+  getProductById,
+  getAllProducts,
+  updateProduct,
+  deleteProduct
 };

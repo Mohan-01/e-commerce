@@ -1,0 +1,352 @@
+[
+  {
+    "category_id": 1,
+    "title": "Smartphone XYZ",
+    "price": 37499.25,
+    "description": "High-end smartphone with latest features",
+    "availability": true
+  },
+  {
+    "category_id": 1,
+    "title": "Laptop ABC",
+    "price": 74999.25,
+    "description": "Powerful laptop for work and entertainment",
+    "availability": true
+  },
+  {
+    "category_id": 1,
+    "title": "Headphones Pro",
+    "price": 11249.25,
+    "description": "Premium wireless headphones with noise cancellation",
+    "availability": true
+  },
+  {
+    "category_id": 1,
+    "title": "Smartwatch Plus",
+    "price": 14999.25,
+    "description": "Smartwatch with health tracking features",
+    "availability": true
+  },
+  {
+    "category_id": 1,
+    "title": "Wireless Earbuds",
+    "price": 5999.25,
+    "description": "Compact earbuds with long battery life",
+    "availability": true
+  },
+  {
+    "category_id": 2,
+    "title": "Men's Denim Jeans",
+    "price": 4499.25,
+    "description": "Classic denim jeans for men",
+    "availability": true
+  },
+  {
+    "category_id": 2,
+    "title": "Women's Floral Dress",
+    "price": 5999.25,
+    "description": "Elegant floral dress for women",
+    "availability": true
+  },
+  {
+    "category_id": 2,
+    "title": "Kids' Printed T-Shirt",
+    "price": 1499.25,
+    "description": "Comfortable cotton t-shirt for kids with fun prints",
+    "availability": true
+  },
+  {
+    "category_id": 2,
+    "title": "Men's Formal Shirt",
+    "price": 2999.25,
+    "description": "Stylish formal shirt for men",
+    "availability": true
+  },
+  {
+    "category_id": 2,
+    "title": "Women's Workout Leggings",
+    "price": 2249.25,
+    "description": "Stretchy leggings for workouts and yoga",
+    "availability": true
+  },
+  {
+    "category_id": 3,
+    "title": "Stainless Steel Cookware Set",
+    "price": 9749.25,
+    "description": "Complete set of durable stainless steel cookware",
+    "availability": true
+  },
+  {
+    "category_id": 3,
+    "title": "Robot Vacuum Cleaner",
+    "price": 14999.25,
+    "description": "Smart vacuum cleaner for automated cleaning",
+    "availability": true
+  },
+  {
+    "category_id": 3,
+    "title": "Decorative Throw Pillows (Set of 2)",
+    "price": 1874.25,
+    "description": "Soft and stylish throw pillows for home decor",
+    "availability": true
+  },
+  {
+    "category_id": 3,
+    "title": "Electric Kettle",
+    "price": 2624.25,
+    "description": "Fast-boiling electric kettle for tea and coffee",
+    "availability": true
+  },
+  {
+    "category_id": 3,
+    "title": "Kitchen Knife Set",
+    "price": 3749.25,
+    "description": "High-quality knife set for food preparation",
+    "availability": true
+  },
+  {
+    "category_id": 5,
+    "title": "Anti-Aging Facial Serum",
+    "price": 2999.25,
+    "description": "Rejuvenating serum for youthful skin",
+    "availability": true
+  },
+  {
+    "category_id": 5,
+    "title": "Moisturizing Body Lotion",
+    "price": 1124.25,
+    "description": "Hydrating lotion for smooth and soft skin",
+    "availability": true
+  },
+  {
+    "category_id": 5,
+    "title": "Men's Cologne",
+    "price": 3749.25,
+    "description": "Refreshing fragrance for men",
+    "availability": true
+  },
+  {
+    "category_id": 5,
+    "title": "Women's Perfume",
+    "price": 4499.25,
+    "description": "Feminine perfume with floral notes",
+    "availability": true
+  },
+  {
+    "category_id": 5,
+    "title": "Facial Cleansing Brush",
+    "price": 2249.25,
+    "description": "Gentle brush for deep cleansing and exfoliation",
+    "availability": true
+  },
+  {
+    "category_id": 6,
+    "title": "Yoga Mat",
+    "price": 2249.25,
+    "description": "Non-slip yoga mat for home workouts",
+    "availability": true
+  },
+  {
+    "category_id": 6,
+    "title": "Camping Tent",
+    "price": 7499.25,
+    "description": "Spacious tent for outdoor adventures",
+    "availability": true
+  },
+  {
+    "category_id": 6,
+    "title": "Soccer Ball",
+    "price": 1499.25,
+    "description": "Durable soccer ball for practice and games",
+    "availability": true
+  },
+  {
+    "category_id": 6,
+    "title": "Bicycle Helmet",
+    "price": 2999.25,
+    "description": "Safety helmet for cycling and outdoor sports",
+    "availability": true
+  },
+  {
+    "category_id": 6,
+    "title": "Fitness Tracker Watch",
+    "price": 5999.25,
+    "description": "Smartwatch with fitness tracking features",
+    "availability": true
+  },
+  {
+    "category_id": 7,
+    "title": "Building Blocks Set",
+    "price": 2999.25,
+    "description": "Colorful building blocks for creative play",
+    "availability": true
+  },
+  {
+    "category_id": 7,
+    "title": "Board Game: Adventure Quest",
+    "price": 1874.25,
+    "description": "Exciting adventure board game for the whole family",
+    "availability": true
+  },
+  {
+    "category_id": 7,
+    "title": "Dollhouse Playset",
+    "price": 3749.25,
+    "description": "Detailed dollhouse with furniture and accessories",
+    "availability": true
+  },
+  {
+    "category_id": 7,
+    "title": "Educational Puzzle Set",
+    "price": 1499.25,
+    "description": "Interactive puzzles for learning and fun",
+    "availability": true
+  },
+  {
+    "category_id": 7,
+    "title": "Remote Control Car",
+    "price": 2249.25,
+    "description": "Speedy remote control car for racing and stunts",
+    "availability": true
+  },
+  {
+    "category_id": 8,
+    "title": "Multivitamin Tablets (60 Count)",
+    "price": 1499.25,
+    "description": "Daily multivitamin supplement for overall health",
+    "availability": true
+  },
+  {
+    "category_id": 8,
+    "title": "Protein Powder (Vanilla)",
+    "price": 2249.25,
+    "description": "High-quality protein powder for muscle recovery",
+    "availability": true
+  },
+  {
+    "category_id": 8,
+    "title": "Yoga Block and Strap Set",
+    "price": 1124.25,
+    "description": "Essential yoga accessories for flexibility and support",
+    "availability": true
+  },
+  {
+    "category_id": 8,
+    "title": "Essential Oil Diffuser",
+    "price": 2999.25,
+    "description": "Aromatic diffuser for relaxation and aromatherapy",
+    "availability": true
+  },
+  {
+    "category_id": 8,
+    "title": "Fitness Tracker Band",
+    "price": 3749.25,
+    "description": "Wearable fitness tracker for activity monitoring",
+    "availability": true
+  },
+  {
+    "category_id": 9,
+    "title": "Modern Sectional Sofa",
+    "price": 59999.25,
+    "description": "Stylish and comfortable sectional sofa for living room",
+    "availability": true
+  },
+  {
+    "category_id": 9,
+    "title": "Dining Table Set (4 Chairs)",
+    "price": 22499.25,
+    "description": "Elegant dining table set with four chairs",
+    "availability": true
+  },
+  {
+    "category_id": 9,
+    "title": "Bedside Table with Drawer",
+    "price": 5999.25,
+    "description": "Compact bedside table for storage and organization",
+    "availability": true
+  },
+  {
+    "category_id": 9,
+    "title": "Floor Lamp",
+    "price": 9749.25,
+    "description": "Modern floor lamp for ambient lighting",
+    "availability": true
+  },
+  {
+    "category_id": 9,
+    "title": "Wall Mirror",
+    "price": 3749.25,
+    "description": "Decorative wall mirror for entryway or hallway",
+    "availability": true
+  },
+  {
+    "category_id": 10,
+    "title": "Diamond Stud Earrings",
+    "price": 37499.25,
+    "description": "Sparkling diamond stud earrings for everyday elegance",
+    "availability": true
+  },
+  {
+    "category_id": 10,
+    "title": "Men's Chronograph Watch",
+    "price": 14999.25,
+    "description": "Classic chronograph watch for men",
+    "availability": true
+  },
+  {
+    "category_id": 10,
+    "title": "Women's Pearl Necklace",
+    "price": 11249.25,
+    "description": "Timeless pearl necklace for sophisticated style",
+    "availability": true
+  },
+  {
+    "category_id": 10,
+    "title": "Gold Bracelet",
+    "price": 22499.25,
+    "description": "Elegant gold bracelet for special occasions",
+    "availability": true
+  },
+  {
+    "category_id": 10,
+    "title": "Silver Pendant",
+    "price": 5999.25,
+    "description": "Simple yet stylish silver pendant necklace",
+    "availability": true
+  },
+  {
+    "category_id": 4,
+    "title": "Fiction Novel: \"The Nightingale\"",
+    "price": 974.25,
+    "description": "Gripping historical fiction novel set in World War II",
+    "availability": true
+  },
+  {
+    "category_id": 4,
+    "title": "Self-Help Book: \"The Power of Now\"",
+    "price": 1124.25,
+    "description": "Inspirational guide to living in the present moment",
+    "availability": true
+  },
+  {
+    "category_id": 4,
+    "title": "Cookbook: \"The Joy of Cooking\"",
+    "price": 2249.25,
+    "description": "Comprehensive cookbook with recipes for every occasion",
+    "availability": true
+  },
+  {
+    "category_id": 4,
+    "title": "Biography: \"Becoming\"",
+    "price": 1214.25,
+    "description": "Memoir by Michelle Obama, former First Lady of the United States",
+    "availability": true
+  },
+  {
+    "category_id": 4,
+    "title": "Thriller Novel: \"The Girl on the Train\"",
+    "price": 824.25,
+    "description": "Suspenseful thriller novel with unexpected twists",
+    "availability": true
+  }
+]
