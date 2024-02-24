@@ -2,7 +2,12 @@ import { Sequelize } from 'sequelize';
 import dotenv from 'dotenv';
 import path from 'path';
 
-dotenv.config({ path: path.join(process.cwd(), '.env') });
+const filePath = process.cwd().includes('db')
+  ? path.join(process.cwd(), '..', '.env')
+  : path.join(process.cwd(), '.env');
+console.log({ filePath });
+
+dotenv.config({ path: filePath });
 
 const sequelize = new Sequelize({
   dialect: 'postgres',
@@ -18,6 +23,8 @@ async function testConnection() {
   try {
     await sequelize.authenticate();
     console.log('Connection has been established successfully.');
+    await sequelize.sync();
+    console.log('Tables created successfully');
   } catch (error) {
     console.error('Unable to connect to the database:', error);
   }

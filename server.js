@@ -1,6 +1,4 @@
 import dotenv from 'dotenv';
-import fs from 'node:fs';
-import path from 'path';
 
 import app from './app.js';
 import db from './config/db.js';

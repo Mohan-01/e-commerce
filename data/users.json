@@ -1,0 +1,104 @@
+[
+  {
+    "username": "admin_user",
+    "password": "pass1234",
+    "email": "admin@example.com",
+    "role": "admin"
+  },
+  {
+    "username": "merchant_user1",
+    "password": "pass1234",
+    "email": "merchant1@example.com",
+    "role": "merchant"
+  },
+  {
+    "username": "merchant_user2",
+    "password": "pass1234",
+    "email": "merchant2@example.com",
+    "role": "merchant"
+  },
+  {
+    "username": "merchant_user3",
+    "password": "pass1234",
+    "email": "merchant3@example.com",
+    "role": "merchant"
+  },
+  {
+    "username": "merchant_user4",
+    "password": "pass1234",
+    "email": "merchant4@example.com",
+    "role": "merchant"
+  },
+  {
+    "username": "john_doe",
+    "password": "pass1234",
+    "email": "john.doe@example.com",
+    "role": "customer"
+  },
+  {
+    "username": "jane_smith",
+    "password": "pass1234",
+    "email": "jane.smith@example.com",
+    "role": "customer"
+  },
+  {
+    "username": "mike_jackson",
+    "password": "pass1234",
+    "email": "mike.jackson@example.com",
+    "role": "customer"
+  },
+  {
+    "username": "emily_roberts",
+    "password": "pass1234",
+    "email": "emily.roberts@example.com",
+    "role": "customer"
+  },
+  {
+    "username": "david_wilson",
+    "password": "pass1234",
+    "email": "david.wilson@example.com",
+    "role": "customer"
+  },
+  {
+    "username": "susan_brown",
+    "password": "pass1234",
+    "email": "susan.brown@example.com",
+    "role": "customer"
+  },
+  {
+    "username": "kevin_jones",
+    "password": "pass1234",
+    "email": "kevin.jones@example.com",
+    "role": "customer"
+  },
+  {
+    "username": "laura_miller",
+    "password": "pass1234",
+    "email": "laura.miller@example.com",
+    "role": "customer"
+  },
+  {
+    "username": "michael_clark",
+    "password": "pass1234",
+    "email": "michael.clark@example.com",
+    "role": "customer"
+  },
+  {
+    "username": "sarah_taylor",
+    "password": "pass1234",
+    "email": "sarah.taylor@example.com",
+    "role": "customer"
+  },
+  {
+    "username": "william_thompson",
+    "password": "pass1234",
+    "email": "william.thompson@example.com",
+    "role": "customer"
+  },
+  {
+    "username": "emma_anderson",
+    "password": "pass1234",
+    "email": "emma.anderson@example.com",
+    "role": "customer"
+  }
+]
