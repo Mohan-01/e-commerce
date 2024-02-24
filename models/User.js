@@ -3,6 +3,7 @@ import db from '../config/db.js';
 
 // Define the ENUM type user_role
 const userRoleEnum = ['admin', 'merchant', 'customer'];
+// ["admin", "merchant", "customer", "customer_support", "analytics", "content_manager", "accounting", "shipping"]
 
 // Define the User model
 const User = db.sequelize.define(
