@@ -1,57 +1,52 @@
 import fs from 'fs';
 import path from 'path';
 
-import User from '../models/User.js';
 import db from '../config/db.js';
-import authService from '../services/authService.js';
+import OrderItem from '../models/OrderItem.js';
+import orderItemService from '../services/orderItemService.js';
 
 db.testConnection();
 
-async function importUsers() {
-  const filePath = path.join(process.cwd(), '..', 'data', 'users.json');
+async function importOrders() {
+  const filePath = path.join(process.cwd(), '..', 'data', 'orderItems.json');
   console.log(filePath);
-  const users = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-  for (const user of users) {
-    await authService.signup(
-      user.username,
-      user.password,
-      user.email,
-      user.role
-    );
+  const orders = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  for (const order of orders) {
+    await orderItemService.createOrderItem(order);
   }
   console.log('===========================================');
-  console.log('Users imported successfully!');
+  console.log('OrderItem imported successfully!');
   console.log('===========================================');
-  User.sync();
+  OrderItem.sync();
   process.exit();
 }
 
-const deleteAllUsers = async () => {
+const deleteAllOrders = async () => {
   try {
-    // Check if the User table exists before attempting deletion
-    const tableExists = await User.sync();
+    // Check if the Order table exists before attempting deletion
+    const tableExists = await OrderItem.sync();
     if (tableExists) {
-      await User.destroy({
+      await OrderItem.destroy({
         where: {},
         truncate: true,
         cascade: true
       });
       console.log('===========================================');
-      console.log('All users deleted successfully');
+      console.log('All OrderItem deleted successfully');
       console.log('===========================================');
     } else {
       console.log('===========================================');
-      console.log('User table does not exist');
+      console.log('OrderItem table does not exist');
       console.log('===========================================');
     }
   } catch (error) {
     console.log('===========================================');
-    console.error('Error deleting users:', error);
+    console.error('Error deleting OrderItem:', error);
     console.log('===========================================');
   }
 };
 
 if (process.argv[2] == '--i') {
-  deleteAllUsers();
-  importUsers();
+  //   deleteAllOrders();
+  importOrders();
 }

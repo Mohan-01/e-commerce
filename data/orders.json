@@ -1,0 +1,122 @@
+[
+  {
+    "userId": 40,
+    "totalAmount": 1299.99,
+    "orderDate": "2023-11-15T12:34:56.000Z"
+  },
+  {
+    "userId": 41,
+    "totalAmount": 899.75,
+    "orderDate": "2023-10-22T08:12:34.000Z"
+  },
+  {
+    "userId": 42,
+    "totalAmount": 675.5,
+    "orderDate": "2023-09-17T15:45:23.000Z"
+  },
+  {
+    "userId": 43,
+    "totalAmount": 1499.99,
+    "orderDate": "2023-12-05T09:28:11.000Z"
+  },
+  {
+    "userId": 44,
+    "totalAmount": 109.95,
+    "orderDate": "2023-08-29T14:56:42.000Z"
+  },
+  {
+    "userId": 45,
+    "totalAmount": 2199.5,
+    "orderDate": "2023-07-04T10:03:15.000Z"
+  },
+  {
+    "userId": 46,
+    "totalAmount": 799.99,
+    "orderDate": "2023-06-12T16:27:39.000Z"
+  },
+  {
+    "userId": 47,
+    "totalAmount": 1249.75,
+    "orderDate": "2023-05-08T11:51:58.000Z"
+  },
+  {
+    "userId": 48,
+    "totalAmount": 159.95,
+    "orderDate": "2023-04-14T13:08:37.000Z"
+  },
+  {
+    "userId": 49,
+    "totalAmount": 399.2,
+    "orderDate": "2023-03-21T07:42:09.000Z"
+  },
+  {
+    "userId": 50,
+    "totalAmount": 849.99,
+    "orderDate": "2023-02-18T09:59:44.000Z"
+  },
+  {
+    "userId": 51,
+    "totalAmount": 1799.75,
+    "orderDate": "2023-01-23T17:33:29.000Z"
+  },
+  {
+    "userId": 52,
+    "totalAmount": 499.95,
+    "orderDate": "2022-12-30T14:20:55.000Z"
+  },
+  {
+    "userId": 53,
+    "totalAmount": 1049.25,
+    "orderDate": "2022-11-07T08:47:21.000Z"
+  },
+  {
+    "userId": 54,
+    "totalAmount": 29.99,
+    "orderDate": "2022-10-14T10:06:53.000Z"
+  },
+  {
+    "userId": 55,
+    "totalAmount": 599.75,
+    "orderDate": "2022-09-19T12:28:34.000Z"
+  },
+  {
+    "userId": 56,
+    "totalAmount": 349.5,
+    "orderDate": "2022-08-25T09:15:07.000Z"
+  },
+  {
+    "userId": 40,
+    "totalAmount": 499.2,
+    "orderDate": "2022-07-30T16:39:44.000Z"
+  },
+  {
+    "userId": 41,
+    "totalAmount": 849.99,
+    "orderDate": "2022-06-05T15:52:21.000Z"
+  },
+  {
+    "userId": 42,
+    "totalAmount": 1799.75,
+    "orderDate": "2022-05-12T11:24:47.000Z"
+  },
+  {
+    "userId": 43,
+    "totalAmount": 499.95,
+    "orderDate": "2022-04-17T13:47:15.000Z"
+  },
+  {
+    "userId": 44,
+    "totalAmount": 1049.25,
+    "orderDate": "2022-03-23T10:10:37.000Z"
+  },
+  {
+    "userId": 45,
+    "totalAmount": 29.99,
+    "orderDate": "2022-02-28T14:33:02.000Z"
+  },
+  {
+    "userId": 46,
+    "totalAmount": 599.75,
+    "orderDate": "2022-01-04T08:55:28.000Z"
+  }
+]

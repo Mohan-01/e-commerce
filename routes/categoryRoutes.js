@@ -1,34 +1,23 @@
 import express from 'express';
 import categoryController from '../controllers/categoryController.js';
-// import authMiddleware from '../middleware/authMiddleware';
+import authMiddlewear from '../middlewear/authMiddlewear.js';
 
 const router = express.Router();
 
-router
-  .route('/')
-  .get(
-    // authMiddleware.authenticateUser,
-    categoryController.getCategories
-  )
-  .post(
-    // authMiddleware.authenticateUser,
+router.get('/', categoryController.getCategories);
 
-    categoryController.createCategory
-  );
+router.get(':/id', categoryController.getCategoryById);
 
+router.use(authMiddlewear.authenticateToken);
+
+router.post(
+  '/',
+
+  categoryController.createCategory
+);
 router
   .route('/:id')
-  .get(
-    // authMiddleware.authenticateUser,
-    categoryController.getCategoryById
-  )
-  .patch(
-    // authMiddleware.authenticateUser,
-    categoryController.updateCategory
-  )
-  .delete(
-    // authMiddleware.authenticateUser,
-    categoryController.deleteCategory
-  );
+  .patch(categoryController.updateCategory)
+  .delete(categoryController.deleteCategory);
 
 export default router;
