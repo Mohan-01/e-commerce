@@ -3,6 +3,7 @@ import cookieParser from 'cookie-parser';
 import helmet from 'helmet';
 import xss from 'xss-clean';
 import hpp from 'hpp';
+import cors from 'cors';
 import { rateLimit } from 'express-rate-limit';
 
 import categoryRouter from './routes/categoryRoutes.js';
@@ -23,6 +24,15 @@ const limiter = rateLimit({
 
 // Set security HTTP Headers
 app.use(helmet());
+app.use(
+  cors(
+    cors({
+      origin: ['http://localhost:3000'],
+      methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS', 'HEAD'],
+      credentials: true
+    })
+  )
+);
 
 // Middleware
 app.use(express.json());
